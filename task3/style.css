@@ -1,0 +1,148 @@
+/* -------- BASIC PAGE -------- */
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #eeeeee;
+}
+
+/* -------- FIXED HEADER -------- */
+.header {
+    position: fixed;     /* fixed position */
+    top: 0;
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* -------- FIXED FOOTER -------- */
+.footer {
+    position: fixed;     /* fixed position */
+    bottom: 0;
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* -------- PAGE AREA -------- */
+.page {
+    margin-top: 120px;   /* space for header */
+    margin-bottom: 70px;/* space for footer */
+    height: 70vh;
+    overflow-y: scroll; /* scrollable area */
+}
+
+/* -------- BANNER -------- */
+.banner {
+    height: 250px;
+    background-image: url("banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative; /* parent for absolute text */
+}
+
+.banner-text {
+    position: absolute; /* absolute positioning */
+    right: 40px;
+    top: 80px;
+    color: white;
+    font-size: 24px;
+}
+
+/* -------- MESSAGE -------- */
+.order-message {
+    background: #fff3cd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* -------- STICKY HEADING -------- */
+.sticky-title {
+    position: sticky;   /* sticky position */
+    top: 0;
+    background: white;
+    padding: 10px;
+}
+
+/* -------- PRODUCT ROW -------- */
+.product-row {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+/* -------- CARD (BOX MODEL) -------- */
+.card {
+    width: 220px;
+    background: white;
+
+    padding: 10px;      /* box model */
+    margin: 10px;       /* box model */
+    border: 2px solid #ccc; /* box model */
+
+    text-align: center;
+    position: relative; /* relative position */
+}
+
+/* -------- STATIC POSITION -------- */
+.static-card {
+    position: static;
+}
+
+/* -------- RELATIVE POSITION -------- */
+.relative-card {
+    top: 5px;
+}
+
+/* -------- IMAGE AREA -------- */
+.img-box {
+    position: relative;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+/* -------- OVERLAY -------- */
+.overlay {
+    position: absolute;     /* absolute */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+}
+
+/* -------- SHOW OVERLAY ON HOVER -------- */
+.img-box:hover .overlay {
+    opacity: 1;
+}
+
+/* -------- TEXT STYLES -------- */
+.highlight {
+    color: red;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+.order-btn {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
